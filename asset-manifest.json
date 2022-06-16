@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/blarose/static/css/main.4b0a895d.css",
+    "main.js": "/blarose/static/js/main.9f14fd95.js",
+    "static/js/787.064844ce.chunk.js": "/blarose/static/js/787.064844ce.chunk.js",
+    "static/media/home-slider3.jpg": "/blarose/static/media/home-slider3.f71bf66bada272bd91ab.jpg",
+    "static/media/home-slider4.jpg": "/blarose/static/media/home-slider4.59252406aa3544e78126.jpg",
+    "static/media/home-slider11.jpg": "/blarose/static/media/home-slider11.eb92b2034184eb298afa.jpg",
+    "static/media/home-slider2.jpg": "/blarose/static/media/home-slider2.224c50e6c56d9031c62c.jpg",
+    "static/media/about.jpg": "/blarose/static/media/about.98976325441fb5d2a6c9.jpg",
+    "static/media/our-team.jpg": "/blarose/static/media/our-team.49973116fd3467fcf37e.jpg",
+    "static/media/back2.png": "/blarose/static/media/back2.ef8719cdeaadd9252f24.png",
+    "static/media/back.jpg": "/blarose/static/media/back.83b785ca12c30e684540.jpg",
+    "static/media/avneet.jpg": "/blarose/static/media/avneet.1e40cbd70f80533e4da1.jpg",
+    "static/media/kschatwal.jpg": "/blarose/static/media/kschatwal.ea1bddcf6a9f725b038f.jpg",
+    "static/media/divya-saran.jpg": "/blarose/static/media/divya-saran.7f046df94e86dd148c50.jpg",
+    "index.html": "/blarose/index.html",
+    "main.4b0a895d.css.map": "/blarose/static/css/main.4b0a895d.css.map",
+    "main.9f14fd95.js.map": "/blarose/static/js/main.9f14fd95.js.map",
+    "787.064844ce.chunk.js.map": "/blarose/static/js/787.064844ce.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4b0a895d.css",
+    "static/js/main.9f14fd95.js"
+  ]
+}
