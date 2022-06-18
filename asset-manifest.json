@@ -1,26 +1,43 @@
 {
   "files": {
     "main.css": "/blarose/static/css/main.4b0a895d.css",
-    "main.js": "/blarose/static/js/main.0d6752bc.js",
+    "main.js": "/blarose/static/js/main.82b6314f.js",
     "static/js/787.064844ce.chunk.js": "/blarose/static/js/787.064844ce.chunk.js",
     "static/media/home-slider3.jpg": "/blarose/static/media/home-slider3.f71bf66bada272bd91ab.jpg",
     "static/media/home-slider4.jpg": "/blarose/static/media/home-slider4.59252406aa3544e78126.jpg",
+    "static/media/gems.jpg": "/blarose/static/media/gems.dc373487edd4bfcc5d92.jpg",
     "static/media/home-slider11.jpg": "/blarose/static/media/home-slider11.eb92b2034184eb298afa.jpg",
     "static/media/home-slider2.jpg": "/blarose/static/media/home-slider2.224c50e6c56d9031c62c.jpg",
+    "static/media/gallery.jpg": "/blarose/static/media/gallery.36cd6eb6c37c07e2742d.jpg",
+    "static/media/contact-us.jpg": "/blarose/static/media/contact-us.3cbd4beef7fd9eb6b92e.jpg",
     "static/media/about.jpg": "/blarose/static/media/about.98976325441fb5d2a6c9.jpg",
+    "static/media/clients.jpg": "/blarose/static/media/clients.c1a9d935ca30ace4c9ea.jpg",
+    "static/media/doll.jpg": "/blarose/static/media/doll.aed4c02570d5e1341cc9.jpg",
+    "static/media/nayira.jpg": "/blarose/static/media/nayira.e1549346fd6882ebda6b.jpg",
     "static/media/our-team.jpg": "/blarose/static/media/our-team.49973116fd3467fcf37e.jpg",
     "static/media/back2.png": "/blarose/static/media/back2.ef8719cdeaadd9252f24.png",
+    "static/media/exhibitor3.jpg": "/blarose/static/media/exhibitor3.fdb5115da1c3bef20e2e.jpg",
+    "static/media/exhibitor5.jpg": "/blarose/static/media/exhibitor5.90723fdcf10f2624addc.jpg",
+    "static/media/exhibitor2.jpg": "/blarose/static/media/exhibitor2.2ccdb5757c3fb3d9a552.jpg",
     "static/media/back.jpg": "/blarose/static/media/back.83b785ca12c30e684540.jpg",
+    "static/media/exhibitor4.jpg": "/blarose/static/media/exhibitor4.fa913e941b6880a81926.jpg",
+    "static/media/exhibitor1.jpg": "/blarose/static/media/exhibitor1.0b22980e682d894ad5b7.jpg",
+    "static/media/blossom.jpg": "/blarose/static/media/blossom.7b7bfc5282a34c61fcc9.jpg",
+    "static/media/featured-image-4.jpg": "/blarose/static/media/featured-image-4.46bece6d7041255552fd.jpg",
+    "static/media/featured-image-1.jpg": "/blarose/static/media/featured-image-1.da37210a79da0aeeaa3a.jpg",
+    "static/media/featured-image-2.jpg": "/blarose/static/media/featured-image-2.41126a2683611dbfb2de.jpg",
+    "static/media/featured-image-3.jpg": "/blarose/static/media/featured-image-3.762a793020673520bf25.jpg",
+    "static/media/hemant.jpg": "/blarose/static/media/hemant.df1cdca0cc8ce9447c3c.jpg",
     "static/media/avneet.jpg": "/blarose/static/media/avneet.1e40cbd70f80533e4da1.jpg",
     "static/media/kschatwal.jpg": "/blarose/static/media/kschatwal.ea1bddcf6a9f725b038f.jpg",
     "static/media/divya-saran.jpg": "/blarose/static/media/divya-saran.7f046df94e86dd148c50.jpg",
     "index.html": "/blarose/index.html",
     "main.4b0a895d.css.map": "/blarose/static/css/main.4b0a895d.css.map",
-    "main.0d6752bc.js.map": "/blarose/static/js/main.0d6752bc.js.map",
+    "main.82b6314f.js.map": "/blarose/static/js/main.82b6314f.js.map",
     "787.064844ce.chunk.js.map": "/blarose/static/js/787.064844ce.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4b0a895d.css",
-    "static/js/main.0d6752bc.js"
+    "static/js/main.82b6314f.js"
   ]
 }
