@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/blarose/static/css/main.4b0a895d.css",
-    "main.js": "/blarose/static/js/main.31b2c9fc.js",
+    "main.js": "/blarose/static/js/main.b55f8cee.js",
     "static/js/787.064844ce.chunk.js": "/blarose/static/js/787.064844ce.chunk.js",
     "static/media/home-slider3.jpg": "/blarose/static/media/home-slider3.f71bf66bada272bd91ab.jpg",
     "static/media/home-slider4.jpg": "/blarose/static/media/home-slider4.59252406aa3544e78126.jpg",
@@ -33,11 +33,11 @@
     "static/media/divya-saran.jpg": "/blarose/static/media/divya-saran.7f046df94e86dd148c50.jpg",
     "index.html": "/blarose/index.html",
     "main.4b0a895d.css.map": "/blarose/static/css/main.4b0a895d.css.map",
-    "main.31b2c9fc.js.map": "/blarose/static/js/main.31b2c9fc.js.map",
+    "main.b55f8cee.js.map": "/blarose/static/js/main.b55f8cee.js.map",
     "787.064844ce.chunk.js.map": "/blarose/static/js/787.064844ce.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4b0a895d.css",
-    "static/js/main.31b2c9fc.js"
+    "static/js/main.b55f8cee.js"
   ]
 }
