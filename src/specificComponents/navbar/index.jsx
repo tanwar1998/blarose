@@ -6,6 +6,7 @@ import Slide from '@mui/material/Slide';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import {  Link } from "react-router-dom";
+import LoaderComponent from '../loader/index.jsx';
 
 const navItem = [
     {
@@ -110,6 +111,7 @@ export default function Navbar() {
                     </div>
                 </div>}
             </div>
+            <LoaderComponent/>
         </NavigationBarContent>
     )
 
