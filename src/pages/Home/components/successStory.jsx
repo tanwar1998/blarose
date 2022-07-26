@@ -2,22 +2,22 @@ import React from 'react';
 import Story from '../../../assets/img/title-bottom.png';
 
 
-const story = [
-  {
-    label: '20 + Shows in 2 years of conceptualisation'
-  },
-  {
-    label: 'Shows delivered in 3 cities: Gurugram, Dehradun, Faridabad'
-  },
-  {
-    label: '1000 + Brands participated and exhibited'
-  },
-  {
-    label: '50,000 + Footfalls'
-  }
-]
+// const story = [
+//   {
+//     text: '20 + Shows in 2 years of conceptualisation'
+//   },
+//   {
+//     text: 'Shows delivered in 3 cities: Gurugram, Dehradun, Faridabad'
+//   },
+//   {
+//     text: '1000 + Brands participated and exhibited'
+//   },
+//   {
+//     text: '50,000 + Footfalls'
+//   }
+// ]
 
-export default function SuccessStory() {
+export default function SuccessStory(props) {
     return (
       <div className='hor-row container-main success-story-container'>
         <h2>OUR SUCCESS STORIES</h2>
@@ -26,7 +26,7 @@ export default function SuccessStory() {
         </div>
         <div className='hor-row success-story-card-container'>
 
-          {story.map((item, index) => (
+          {props.store.cacheData.data.successStoryData.data?.map((item, index) => (
             <div className='hor-row success-story-card' key = {'story'+index}>
             <div className='hor-row card-main'>
               <div className='card-static-back'></div>
@@ -34,7 +34,7 @@ export default function SuccessStory() {
                 { '0' + (index + 1)}
               </div>
               <div className='hor-row card-text'>
-                 { item.label }
+                 { item.text }
               </div>
             </div>
           </div>

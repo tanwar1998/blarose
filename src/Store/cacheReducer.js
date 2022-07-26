@@ -1,4 +1,5 @@
 import ACTIONS from "./cacheAction";
+import { homeSlides } from '../Services/defaultConfigData.js'
 
 export let cacheReducerState = {
     data: {
@@ -23,7 +24,7 @@ export let cacheReducerState = {
             display: false
         },
         ppItemData : {
-            data:[],
+            data:{},
             isAlreadyCalled:false
         },
         ppLocationData : {
@@ -35,7 +36,7 @@ export let cacheReducerState = {
             isAlreadyCalled:false
         },
         slidesData : {
-            data:[],
+            data: homeSlides,
             isAlreadyCalled:false
         },
         serviceData : {

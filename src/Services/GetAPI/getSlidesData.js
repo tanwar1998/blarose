@@ -10,7 +10,7 @@ const getSlidesData = (data, update = false) => {
             const config = axiosConfigReturn('home/slides', 'get');
             axios(config).then((response) => {
                 dispatch(updateLoader(false));
-                if (response?.data?.type === 'success') {
+                if (response?.data?.type === 'success' && response.data.data.result.length) {
                     const storeData = {
                         key: 'slidesData',
                         value: {

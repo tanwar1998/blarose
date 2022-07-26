@@ -11,10 +11,18 @@ const getPPItemData = (data, update = false) => {
             axios(config).then((response) => {
                 dispatch(updateLoader(false));
                 if (response?.data?.type === 'success') {
+                    const tmpData = response.data.data.result;
+                    const returnObj = {};
+                    tmpData?.forEach((ele) => {
+                        let tmpObj = returnObj[ele.locationId] || { text: ele.PPLocations[0].text, localAddress: []}
+                        tmpObj.localAddress.push({text: ele.text})
+                        returnObj[ele.locationId] = tmpObj;
+                    });
+
                     const storeData = {
                         key: 'ppItemData',
                         value: {
-                            data: response.data.data.result,
+                            data: returnObj || {},
                             isAlreadyCalled: true
                         }
                     }

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import OurTeam from '../../assets/img/our-team.jpg';
+import PreviousShow from '../../assets/img/gallery.jpg';
 import About from '../../assets/img/about.jpg';
 import ContactUS from '../../assets/img/contact-us.jpg';
 
@@ -81,6 +82,9 @@ export const AboutContainer = styled.div`
             height: calc(100vh - 200px);
             box-sizing: border-box;
 
+        }
+        .previos-shows-back-image{
+            background: url(${PreviousShow});  
         }
 
         h2{

@@ -34,7 +34,7 @@ export default function Register() {
                 </div>
               </div>
               <div className='hor-row right-side-container'>
-                <img src={Back2} />
+                <img src={Back2}  alt = 'registration'/>
               </div>
           </div>
       </div>

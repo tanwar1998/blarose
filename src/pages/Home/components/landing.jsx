@@ -1,41 +1,20 @@
 import React from 'react';
 import CarosuleComponent from '../../../components/CarosuleComponent/index.jsx';
-import Slider1 from '../../../assets/img/home-slider11.jpg';
-import Slider2 from '../../../assets/img/home-slider2.jpg';
-import Slider3 from '../../../assets/img/home-slider3.jpg';
-import Slider4 from '../../../assets/img/home-slider4.jpg';
-
-const images = [
-    {
-        img: Slider1
-    },
-    {
-        img: Slider2
-    },
-    {
-        img: Slider3
-    },
-    {
-        img: Slider4
-    },
-]
 
 
 
-
-export default function LandingComponent() {
+export default function LandingComponent(props) {
     return (
       <div className='hor-row landing-slider-container'>
         <CarosuleComponent
             style = {{height: 'calc(100vh - 95px)'}}>
-
             {
-                images.map((data)=>(
+                props.store.cacheData.data.slidesData.data?.map((data)=>(
                     <div className='hor-row slider-img-container'>
-                        <img src = { data.img } alt = 'slider'/>
+                        <img src = { data.local ? data.image : (process.env.REACT_APP_BASE_API_PATH + data.image) } alt = 'slider'/>
                         <div className='hor-row img-outer'>
                             <div className='hor-row landing-text'>
-                                LIFESTYLE AND FASHION EXHIBITIONS
+                                { data.text?.toUpperCase() }
                             </div>
                         </div>
                     </div>

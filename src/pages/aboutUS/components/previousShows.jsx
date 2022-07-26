@@ -6,31 +6,31 @@ import NoFound from '../../../assets/img/no-image.jpg';
 
 // const teamData = [
 //     {
-//         name: 'Anil Ojha',
-//         image: '',
-//         email: 'anil@blarose.com',
-//         position: 'CMD, Blarose Trenta',
+//         venue: 'Anil Ojha',
+//         img: '',
+//         date: 'anil@blarose.com',
+//         days: 'CMD, Blarose Trenta',
 //         about: ''
 //     },
 //     {
-//         name: 'Avneet',
-//         image: User1 ,
-//         email: 'avneet@blarose.com',
-//         position: 'Founder, Blarose Plus',
+//         venue: 'Avneet',
+//         img: User1 ,
+//         date: 'avneet@blarose.com',
+//         days: 'Founder, Blarose Plus',
 //         about: `Avneet, an IIM, Udaipur alumni, comes with a decade of experience in event planning, hospitality & execution. She has handled events in India as well as abroad in countries such as Dubai, Singapore, Canada, US et al. Some of the companies she's worked with are Info Edge, Times Business Solutions Ltd and Rai University et al. However, it was her passion towards realising her dreams, that made her quit her job and start her entrepreneurial venture, Blarose.`
 //     },
 //     {
-//         name: 'KS Chhatwal',
-//         image: User3 ,
-//         email: '',
-//         position: 'Head, Finance',
+//         venue: 'KS Chhatwal',
+//         img: User3 ,
+//         date: '',
+//         days: 'Head, Finance',
 //         about: `"Treasurer" as we happily call him is the head of our finance department. With a strong experience of over 30 years, Mr Chhatwal has had the privilege of serving Banks like Punjab & Sind Bank and other financial institutions, where he was spearheading the accounts department. In append, he is having a strong experience of managing the food catering business - Jasveen Caterers.`
 //     },
 //     {
-//         name: 'Divya Saran',
-//         image: User2 ,
-//         email: 'divya.saran@blarose.com',
-//         position: 'Product & Digital Marketing Specialist',
+//         venue: 'Divya Saran',
+//         img: User2 ,
+//         date: 'divya.saran@blarose.com',
+//         days: 'Product & Digital Marketing Specialist',
 //         about: `Divya is a seasoned online product development and digital marketing specialist and has worked for companies like Info Edge, Times Business Solutions Ltd and Donzo International Support Services Inc et al, before joining Blarose. With a career span of over 10 years, Divya has enjoyed many roles, however, its social media marketing that is really close to her heart and we lovingly like to call her our "social bee- Blarose Queen Bee".`
 //     }
 // ]
@@ -40,7 +40,7 @@ import NoFound from '../../../assets/img/no-image.jpg';
 export default function OurTeam(props) {
     return (
       <div className='hor-row our-team-container-main'>
-        <div className='hor-row our-team-back-image'></div>
+        <div className='hor-row our-team-back-image previos-shows-back-image'></div>
         <div className='hor-row container-main'>
             <h2>
             "GREAT THINGS IN BUSINESS ARE NEVER DONE BY ONE PERSON.
@@ -59,21 +59,16 @@ export default function OurTeam(props) {
 
             <div className='hor-row team-card-container'>
                 {
-                    props.store.cacheData.data.teamData.data.map((data, index)=>(
-                        <div className='hor-row card-container' key = {'team '+ index}>
-                            <img src = {data.image ? (process.env.REACT_APP_BASE_API_PATH + data.image) : NoFound } alt = 'team'/>
+                    props.store.cacheData.data.previousShowData.data.map((data, index)=>(
+                        <div className='hor-row card-container' key = {'show '+ index}>
+                            <img src = {data.img ? (process.env.REACT_APP_BASE_API_PATH + data.image) : NoFound }  alt = 'show'/>
                             <div className='hor-row member-name'>
-                                { data.name } 
+                                { data.venue } 
                             </div>
                             <i className='hor-row member-designation'>
-                                { data.position } 
+                                { data.days + " days"} 
                             </i>
-                            <a href={"mailto:" + data.email }>
-                                <i>{ data.email } </i>
-                            </a>
-                            <div className='hor-row member-about'>
-                                { data.about } 
-                            </div>
+                            <i>{ data.date } </i>
                         </div>
                     ))
                 }

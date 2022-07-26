@@ -12,7 +12,6 @@ import getSlidesData from '../../Services/GetAPI/getSlidesData.js';
 import getExperienceData from '../../Services/GetAPI/getExperienceData.js';
 import getServiceData from '../../Services/GetAPI/getServiceData.js';
 import getSuccessStoryData from '../../Services/GetAPI/getSuccessStoryData.js';
-import getPPLocationData from '../../Services/GetAPI/getPPLocationData.js';
 import getPPItemData from '../../Services/GetAPI/getPPItemData.js';
 import { updateStore } from '../../Store/cacheAction';
 import PERMANENT_ACTION from '../../Store/permanentAction';
@@ -26,19 +25,18 @@ function Home(props) {
       props.getExperienceData(props.store);
       props.getServiceData(props.store);
       props.getPPItemData(props.store);
-      props.getPPLocationData(props.store);
       props.getSuccessStoryData(props.store);
   }, [])
 
     return (
         <HomeContainer>
-          <LandingComponent/>
-          <Contempolary/>
-          <SuccessStory/>
-          <PremierProperty/>
-          <Service/>
+          <LandingComponent { ...props }/>
+          <Contempolary { ...props }/>
+          <SuccessStory { ...props }/>
+          <PremierProperty { ...props }/>
+          <Service { ...props }/>
           <Register/>
-          <Work/>
+          <Work { ...props }/>
         </HomeContainer>
     );
   }
@@ -53,7 +51,6 @@ const mapDispatchToProps = (dispatch) => {
   return {
     getSlidesData: (item, update = false) => dispatch(getSlidesData(item, update)),
     getPPItemData: (item, update = false) => dispatch(getPPItemData(item, update)),
-    getPPLocationData: (item, update = false) => dispatch(getPPLocationData(item, update)),
     getSuccessStoryData: (item, update = false) => dispatch(getSuccessStoryData(item, update)),
     getExperienceData: (item, update = false) => dispatch(getExperienceData(item, update)),
     getServiceData: (item, update = false) => dispatch(getServiceData(item, update)),

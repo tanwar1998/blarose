@@ -1,59 +1,59 @@
 import React from 'react';
 import CheckIcon from '@mui/icons-material/Check';
 
-const aboutData = [
-  {
-    label: 'Blarose Lifestyle & Fashion Exhibition',
-    date: '18th March, 2018',
-    location: 'Radisson Blu, Faridabad',
-    by: ''
-  },
-  {
-    label: 'Blarose Lifestyle and Fashion Exhibition',
-    date: '18th & 19th Aug, 2018',
-    location: 'Courtyard',
-    by: 'Marriott hotel, Gurugram'
-  },
-  {
-    label: 'Blarose Lifestyle and Fashion Expo',
-    date: '15th & 16th September, 2018 ',
-    location: 'Double Tree',
-    by: 'Hilton, Gurugram'
-  },
-  {
-    label: 'Blarose Lifestyle & Fashion Expo ',
-    date: '20th & 21st October, 2019',
-    location: 'Courtyard',
-    by: 'Marriott hotel, Gurugram'
-  },
-  {
-    label: `Blarose Lifestyle and Fashion exhibition'Diwali Special`,
-    date: '1st & 2nd November, 2018',
-    location: 'Hilton Garden Inn, Gurugram',
-    by: ''
-  },
-  {
-    label: 'Blarose Winter Edition',
-    date: '24th & 25th November, 2018',
-    location: 'Courtyard',
-    by: 'Marriott hotel, Gurugram'
-  },
-  {
-    label: `Blarose Spring Edit '19`,
-    date: '1st - 3rd February, 2019',
-    location: 'Epicentre, Apparel house, Sector 44, Gurugram',
-    by: ''
-  },
-  {
-    label: 'Blarose Spring Fiesta',
-    date: '9th-10th March, 2019',
-    location: 'Nirvana Patio Club , Sector 50 , Gurugram',
-    by: ''
-  },
-]
+// const aboutData = [
+//   {
+//     text: 'Blarose Lifestyle & Fashion Exhibition',
+//     date: '18th March, 2018',
+//     location: 'Radisson Blu, Faridabad',
+//     by: ''
+//   },
+//   {
+//     text: 'Blarose Lifestyle and Fashion Exhibition',
+//     date: '18th & 19th Aug, 2018',
+//     location: 'Courtyard',
+//     by: 'Marriott hotel, Gurugram'
+//   },
+//   {
+//     text: 'Blarose Lifestyle and Fashion Expo',
+//     date: '15th & 16th September, 2018 ',
+//     location: 'Double Tree',
+//     by: 'Hilton, Gurugram'
+//   },
+//   {
+//     text: 'Blarose Lifestyle & Fashion Expo ',
+//     date: '20th & 21st October, 2019',
+//     location: 'Courtyard',
+//     by: 'Marriott hotel, Gurugram'
+//   },
+//   {
+//     text: `Blarose Lifestyle and Fashion exhibition'Diwali Special`,
+//     date: '1st & 2nd November, 2018',
+//     location: 'Hilton Garden Inn, Gurugram',
+//     by: ''
+//   },
+//   {
+//     text: 'Blarose Winter Edition',
+//     date: '24th & 25th November, 2018',
+//     location: 'Courtyard',
+//     by: 'Marriott hotel, Gurugram'
+//   },
+//   {
+//     text: `Blarose Spring Edit '19`,
+//     date: '1st - 3rd February, 2019',
+//     location: 'Epicentre, Apparel house, Sector 44, Gurugram',
+//     by: ''
+//   },
+//   {
+//     text: 'Blarose Spring Fiesta',
+//     date: '9th-10th March, 2019',
+//     location: 'Nirvana Patio Club , Sector 50 , Gurugram',
+//     by: ''
+//   },
+// ]
 
 
-export default function About() {
+export default function About(props) {
     return (
       <div className='hor-row about-us-container-main'>
         <div className='hor-row about-us-back-image'></div>
@@ -70,13 +70,13 @@ export default function About() {
               <h3>
                 Our Success stories- B2C Exhibitions
               </h3>
-              { aboutData.map((data, index)=>(
+              { props.store.cacheData.data.aboutSStoryData.data.map((data, index)=>(
                 <div className='hor-row exhibition-content' key = {'about' + index}>
                   <CheckIcon className='check-icon'/>
                   <span className=''>
                     Season {index + 1}: 
                   </span>
-                  { data.label + '- ' }
+                  { data.text + '- ' }
                   <span>
                     { data.date +  ' - ' + data.location + ' '}
                   </span>

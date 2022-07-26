@@ -14,10 +14,6 @@ const navItem = [
         link: ' '
     },
     {
-        key: 'SERVICES',
-        link: 'services'
-    },
-    {
         key: 'ABOUT US',
         subItem: [
             {
@@ -27,6 +23,10 @@ const navItem = [
             {
                 label: 'Our Team',
                 link: 'our-team'
+            },
+            {
+                label: 'Previous Shows',
+                link: 'previous-shows'
             },
             {
                 label: 'Contact Us',
