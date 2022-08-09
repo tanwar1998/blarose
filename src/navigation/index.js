@@ -1,7 +1,7 @@
 import React from 'react';
 import {
-//   BrowserRouter,
-  HashRouter as Router,
+  BrowserRouter,
+//   HashRouter as Router,
   Routes,
   Route,
 } from "react-router-dom";
@@ -15,7 +15,7 @@ import ToastifyComponent from '../components/Toastify';
 
 export default function App() {
     return(
-        <Router>
+        <BrowserRouter>
             <Navbar/>
             <Routes >
                 <Route path="/" element={<Home />} />
@@ -28,6 +28,6 @@ export default function App() {
             </Routes>
             <ToastifyComponent/>
             <FooterContainer/>
-        </Router>
+        </BrowserRouter>
     )
 };

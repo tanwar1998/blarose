@@ -78,7 +78,7 @@ export const NavigationBarContent = styled.div`
                 text-align: left;
                 color: #fff;
                 padding: 0;
-                width: calc(100% + 20px);
+                width: calc(100% + 40px);
                 top: 60px;
                 display: none;
 

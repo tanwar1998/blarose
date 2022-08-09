@@ -40,7 +40,14 @@ import NoFound from '../../../assets/img/no-image.jpg';
 export default function OurTeam(props) {
     return (
       <div className='hor-row our-team-container-main'>
-        <div className='hor-row our-team-back-image previos-shows-back-image'></div>
+        <div className='hor-row our-team-back-image previos-shows-back-image'>
+            <div className='shows-content-back'>
+                <div>
+                    Snippets Of Our Past Exhibitions
+                </div>
+            </div>
+            
+        </div>
         <div className='hor-row container-main'>
             <h2>
             "GREAT THINGS IN BUSINESS ARE NEVER DONE BY ONE PERSON.

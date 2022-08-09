@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import OurTeam from '../../assets/img/our-team.jpg';
-import PreviousShow from '../../assets/img/gallery.jpg';
+import PreviousShow from '../../assets/img/shows.jpg';
 import About from '../../assets/img/about.jpg';
 import ContactUS from '../../assets/img/contact-us.jpg';
 
@@ -85,6 +85,24 @@ export const AboutContainer = styled.div`
         }
         .previos-shows-back-image{
             background: url(${PreviousShow});  
+            background-position: center;
+            
+            .shows-content-back{
+                background: linear-gradient(45deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2));
+                color: #fff;
+                position: relative;
+                height: 100%;
+                font-size: 35px;
+                font-weight: bold;
+
+                div{
+                    position: absolute;
+                    top: calc(50% - 20px);
+                    color: #fff;
+                    font-size: 50px;
+                    width: 100%;
+                }
+            }
         }
 
         h2{

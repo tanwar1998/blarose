@@ -2,28 +2,28 @@ import React from 'react';
 
 const work = [
     {
-        label: '1000+',
+        count: '1000+',
         text: 'EXHIBITORS'
     },
     {
-        label: '16+',
+        count: '16+',
         text: 'YEARS OF EXPERIENCE'
     },
     {
-        label: '1000+',
+        count: '1000+',
         text: 'BRANDS'
     },
 ]
 
-export default function Work() {
+export default function Work(props) {
     return (
     <div className='hor-row work-done-container-main'>
             <div className='hor-row bottom-block'></div>
         <div className='hor-row container-main work-content-main'>
-            { work.map((item, index) => (
+            { props.store.cacheData.data.experienceData.data.map((item, index) => (
                 <div className='hor-row work-card' key = { 'work' + index}>
                     <h2>
-                        { item.label }
+                        { item.count }
                     </h2>
                     <div className='hor-row work-under-line-container'>
                         <div className='work-under-line'></div>

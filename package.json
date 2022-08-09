@@ -1,7 +1,7 @@
 {
   "name": "your-project-name",
   "version": "0.1.0",
-  "homepage": "https://tanwar1998.github.io/blarose",
+  "homepage": "http://blarose.com/blarose-new-ui/",
   "private": true,
   "dependencies": {
     "@mui/icons-material": "^5.8.4",

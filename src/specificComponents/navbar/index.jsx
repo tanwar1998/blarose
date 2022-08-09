@@ -11,7 +11,7 @@ import LoaderComponent from '../loader/index.jsx';
 const navItem = [
     {
         key: 'HOME',
-        link: ' '
+        link: '/'
     },
     {
         key: 'ABOUT US',
